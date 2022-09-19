@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -18,14 +18,9 @@ body {
 
 /*header*/
 .page-header {
-  background-color: #FFFFFF;
-
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-
-    border-bottom: 1px solid #ECECEC;
+   height: 80px;
+    
+   border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav {
@@ -105,6 +100,16 @@ body {
     padding-bottom: 200px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 .transparent-header {
     visibility: hidden;
     pointer-events: none;
@@ -120,8 +125,11 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
+    width: 696px;
     margin-top: 0;
+    margin-right: auto;
     margin-bottom: 30px;
+    margin-left: auto;
 }
 
 .button-studio {
@@ -152,15 +160,18 @@ ul {
 }
 .text-photo {
     padding-top: 30px;
-    padding-right: 70px;
     padding-bottom: 30px;
-    padding-left: 70px;
+    text-align: center;
+
+    background-color: #FFFFFF;
 }
 .portfolio-photo {
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
+
+    background-color: #FFFFFF;
 
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
@@ -208,7 +219,7 @@ ul {
 }
 
 .photo-section {
-    padding-top: 94px;
+    padding-top: 0;
     padding-bottom: 94px;
 }
 
@@ -258,6 +269,9 @@ ul {
 /*footer*/
 .page-footer {
     background-color: #2F303A;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-two {
@@ -293,11 +307,8 @@ ul {
 
     line-height: 1.71;
 }
-.gmail-footer {
+.contact-footer:not(:last-child) {
     margin-bottom: 9px;
-}
-.number-footer {
-    margin-bottom: 60px;
 }
 
 /*portfolio*/
@@ -358,18 +369,13 @@ ul {
     min-width: 130px;
 }
 
-.list-four {
-    margin-bottom: 94px;
-}
-
 .text-portfolio {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin-top: 0;
-    margin-bottom: 4px;
+    margin: 0;
 }
 .paragraph-portfolio {
     color: #757575;
@@ -377,8 +383,7 @@ ul {
     font-size: 16px;
     line-height: 1.87;
 
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 
