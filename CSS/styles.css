@@ -16,6 +16,21 @@ body {
     margin-right: auto;
 }
 
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+}
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+}
+.icon-benefits {
+    width: 65px;
+    height: 70px;
+}
+
+
 /*header*/
 .page-header {
    height: 80px;
@@ -94,6 +109,9 @@ body {
 /*main*/
 .heading {
     background-color: #2F303A;
+    background-image: url(../images/Img\ \(5\).jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4));
+
     text-align: center;
     
     padding-top: 200px; 
@@ -253,6 +271,7 @@ ul {
     text-align: center;
 
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .text-paragraph {
@@ -291,6 +310,7 @@ ul {
 }
 
 .address-footer {
+    display: block;
     text-decoration: none;
     color: #FFFFFF;
     font-style: normal;
@@ -301,13 +321,17 @@ ul {
 }
 
 .contact-footer {
+    display: inline-block;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
 
     line-height: 1.71;
 }
-.contact-footer:not(:last-child) {
+.contact-li {
+    display: block;
+}
+.contact-li:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -375,7 +399,7 @@ ul {
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin: 0;
+     margin-bottom: 4px;
 }
 .paragraph-portfolio {
     color: #757575;
