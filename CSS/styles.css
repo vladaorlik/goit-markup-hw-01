@@ -28,10 +28,61 @@ body {
     width: 10px;
     height: 16px;
 }
-.icon-benefits {
+.icon-envelope:hover,
+.icon-smartphone:hover {
+    fill: #2196F3;
+}
+
+
+.icon-antenna {
     width: 65px;
     height: 70px;
 }
+.icon-clock {
+    width: 65px;
+    height: 70px;
+}
+.icon-diagram {
+    width: 70px;
+    height: 54px;
+}
+.icon-astronaut {
+   width: 70px;
+   height: 70px;
+}
+
+.icon-social {
+    width: 20px;
+    height: 20px;
+}
+
+.group-one {
+    width: 41px;
+    height: 46px;
+}
+.group-two {
+    width: 40px;
+    height: 52px;
+}
+.group-three {
+    width: 43px;
+    height: 41px;
+}
+.group-four {
+    fill: #AFB1B8;
+
+    width: 84px;
+    height: 40px;
+}
+.group-five {
+    width: 62px;
+    height: 45px;
+}
+.group-six {
+    width: 93px;
+    height: 43px;
+}
+
 
 
 /*header*/
@@ -442,6 +493,7 @@ ul {
 .link:hover,
 .link:focus {
     color:#2196F3;
+    fill: #2196F3;
 }
 .button-studio:hover,
 .button-studio:focus,
