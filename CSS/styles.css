@@ -26,12 +26,15 @@ body {
     width: 16px;
     height: 12px;
 
-    fill: rgba(117, 117, 117, 1);
+    fill: currentColor;
+}
+/*rgba(117, 117, 117, 1)*/
+.icon-smartphone:hover,
+.icon-envelope:hover {
+    fill: currentColor;
 }
 
-.icon-smartphone:hover,
-.icon-envelope:hover,
-.Logo:hover,
+
 .icon-footer:hover {
     fill: rgba(33, 150, 243, 1);
 }
@@ -66,10 +69,11 @@ body {
 .icon-social {
     width: 20px;
     height: 20px;
-    fill: rgba(175, 177, 184, 1);
+    fill: currentColor;
 }
+
 .icon-social:hover {
-    fill: rgba(255, 255, 255, 1);
+    fill: currentColor;
 }
 
 .icon-list {
@@ -80,6 +84,7 @@ body {
     width: 44px;
 
    border-radius: 50%;
+
 }
 
 .icon-footer:not(:last-child),
@@ -94,9 +99,17 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    color: #AFB1B8;
 }
+.footer-a {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
 .icon-a:hover {
     background-color: #2196F3;
+    color: #FFFFFF;
 }
 
 
@@ -134,16 +147,21 @@ body {
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    color: #AFB1B8;
 }
 .clients-a:hover {
     border-color: #2196F3;
+    color: #2196F3;
 }
 
 .Logo {
     width: 106px;
     height: 60px;
 
-    fill: rgba(175, 177, 184, 1);
+    fill: currentColor;
+}
+.Logo:hover {
+    fill: currentColor;
 }
 
 .footer-p {
@@ -234,6 +252,7 @@ body {
 
     padding-top: 32px;
     padding-bottom: 32px;
+
 }
 
 .list-contact {
@@ -257,15 +276,21 @@ body {
 /*main*/
 .heading {
     background-color: #2F303A;
-    background-image: url(../images/Img\ \(5\).jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4));
+    background: linear-gradient( to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), 
+    url(../images/Img\ \(5\).jpg);
+
     background-size: cover;
 
     text-align: center;
     
     padding-top: 200px; 
     padding-bottom: 200px;
+
+    min-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 h1,
 h2,
@@ -596,7 +621,6 @@ ul {
 .item-a:hover {
     display: block;
 
-    border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
