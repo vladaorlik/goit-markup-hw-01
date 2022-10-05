@@ -765,6 +765,7 @@ ul {
     left: 0;
 
     background-color:rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms var(--o-animation);
  }
 
  .basckdrop.is-hidden {
