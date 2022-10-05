@@ -15,7 +15,7 @@
       <nav class="main-nav">
         <a href="/" class="logo">Web<span class="logo-color">Studio</span></a>
         <ul class="list-nav">
-          <li class="studio-nav"><a class="link" href="./index.html"><span class="color">Студія</span></a></li>
+          <li class="studio-nav"><a class="link link-s" href="./index.html"><span class="color">Студія</span></a></li>
           <li class="studio-nav"><a class="link" href="./portfolio.html">Портфоліо</a></li>
           <li class="studio-nav"><a class="link" href="/">Контакти</a></li>
         </ul>
@@ -42,7 +42,7 @@
       <section class="heading">
         <div class="container">
        <h1 class="title-text">Ефективні рішення для вашого бізнесу</h1>
-      <button class="button-studio" type="button">Замовити послугу</button>
+      <button class="button-studio" type="button" data-modal-open>Замовити послугу</button>
       </div>
       </section>
       <section class="features">
@@ -102,31 +102,52 @@
       <h2 class="title-two">Чим ми займаємося</h2>
       <ul class="list-photo"> 
       <li class="photo-li"> 
-       <img class="photo"
-        src="images/photo1.jpg"
-        alt="programer working his desk office"
-        width="370"
-        height="294"
-      />
+       <div class="photo-div">
+        <img class="photo" 
+        src="images/photo1.jpg" 
+        alt="programer working his desk office" 
+        width="370" 
+        height="294" 
+        />
+        <div class="photo-box">
+          <p class="photo-p">
+            Десктопні додатки
+          </p>
+        </div>
+       </div>
       </li>
       <li class="photo-li">
-      <img class="photo"
-        src="images/photo2.jpg"
-        alt="web ui designers are developing application smartphones"
+      <div class="photo-div">
+        <img class="photo" 
+        src="images/photo2.jpg" 
+        alt="web ui designers are developing application smartphones" 
         width="370"
-        height="294"
-      />
+        height="294" 
+        />
+        <div class="photo-box">
+          <p class="photo-p">
+            Мобільні додатки
+          </p>
+        </div>
+      </div>
       </li>
       <li class="photo-li">
-      <img class="photo"
-        src="images/photo3.jpg"
+      <div class="photo-div">
+        <img class="photo" 
+        src="images/photo3.jpg" 
         alt="creative artist web design with working colour selection graphic tablet"
-        width="370"
-        height="294"
-      />
+        width="370" 
+        height="294" 
+        />
+        <div class="photo-box">
+          <p class="photo-p">
+            Дизайнерські рішення
+          </p>
+        </div>
+      </div>
       </li>
       </ul>
-      </div>
+    </div>
       </section>
        <section class="team">
        <div class="container">
@@ -384,5 +405,23 @@
      </div>
      </div>
     </footer>
+  
+<div class="basckdrop is-hidden" data-modal>
+
+  <div class="modal">
+        
+    <button type="button" class="button-modal" data-modal-close>
+      <svg class="svg-modal">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+
+  </div>
+
+</div>
+    
+
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
