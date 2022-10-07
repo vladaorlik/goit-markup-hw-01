@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="uk">
+<!DOCTYPE html> <html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -402,26 +401,58 @@
             </a>
           </li>
         </ul>
-     </div>
+      </div>
+      <div class="footer-form">
+        <form>
+          <p class="footer-p">Підпишіться на розсилку</p>
+          <div class="box">
+            <input type="email" name="mail" placeholder="E-mail" class="input-f">
+            <button type="submit" class="button-form">
+              Підписатися
+              <svg class="svg-form">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
      </div>
     </footer>
-  
-<div class="basckdrop is-hidden" data-modal>
-
-  <div class="modal">
-        
-    <button type="button" class="button-modal" data-modal-close>
-      <svg class="svg-modal">
-        <use href="./images/icons.svg#close"></use>
-      </svg>
-    </button>
-
-  </div>
-
-</div>
-    
-
+     <div class="basckdrop is-hidden" data-modal>
+       <div class="modal">  
+        <button type="button" class="button-modal" data-modal-close>
+          <svg class="svg-modal">
+           <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="text-modal">Залиште свої дані, ми вам передзвонимо</p>
+          <ul>
+            <li class="list-modal">
+              <label for="name" class="name-modal">Ім'я</label>
+              <input type="text" name="name" id="name" placeholder/>
+            </li>
+            <li class="list-modal">
+              <label for="tel" class="name-modal">Телефон</label>
+              <input type="tel" name="tel" id="tel" placeholder/>
+            </li>
+            <li class="list-modal">
+              <label for="mail" class="name-modal">Пошта</label>
+              <input type="email" name="mail" id="mail" placeholder/>
+            </li>
+            <li class="list-modal">
+              <label for="comment" class="name-modal">Коментар</label>
+              <textarea name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
+            </li>
+          </ul>   
+          <div class="div-modal">       
+              <input type="checkbox" name="agreement" id="agreement">
+              <label for="agreement" class="text-two">Погоджуюся з розсилкою та приймаю <span><a href="/" class="text-span">Умови договору</a></span></label>
+          </div>
+              <button type="submit" class="but-modal">Відправити</button>
+        </form>
+       </div>
+     </div>
     <script src="./js/modal.js"></script>
-
   </body>
 </html>
