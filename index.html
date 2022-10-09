@@ -430,15 +430,30 @@
           <ul>
             <li class="list-modal">
               <label for="name" class="name-modal">Ім'я</label>
-              <input type="text" name="name" id="name" placeholder/>
+            <div class="input-div">
+              <input class="input-modal" type="text" name="name" id="name" placeholder/>
+              <svg class="svg-input">
+                <use href="./images/icons.svg#person-black"> </use>
+              </svg>
+            </div>
             </li>
             <li class="list-modal">
               <label for="tel" class="name-modal">Телефон</label>
-              <input type="tel" name="tel" id="tel" placeholder/>
+              <div class="input-div">
+              <input class="input-modal" type="tel" name="tel" id="tel" placeholder/>
+              <svg class="svg-input">
+                <use href="./images/icons.svg#phone-black"> </use>
+              </svg>
+              </div>
             </li>
             <li class="list-modal">
               <label for="mail" class="name-modal">Пошта</label>
-              <input type="email" name="mail" id="mail" placeholder/>
+              <div class="input-div">
+              <input class="input-modal" type="email" name="mail" id="mail" placeholder />
+              <svg class="svg-input">
+                <use href="./images/icons.svg#email-black"> </use>
+              </svg>
+              </div>
             </li>
             <li class="list-modal">
               <label for="comment" class="name-modal">Коментар</label>
@@ -446,8 +461,11 @@
             </li>
           </ul>   
           <div class="div-modal">       
-              <input type="checkbox" name="agreement" id="agreement">
-              <label for="agreement" class="text-two">Погоджуюся з розсилкою та приймаю <span><a href="/" class="text-span">Умови договору</a></span></label>
+              <label class="text-two">
+                <input type="checkbox" name="agreement" class="checkbox">
+                <span class="icon-agreement"></span>
+                Погоджуюся з розсилкою та приймаю <span><a href="/" class="text-span">Умови договору</a></span>
+              </label>
           </div>
               <button type="submit" class="but-modal">Відправити</button>
         </form>
