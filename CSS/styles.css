@@ -1010,6 +1010,7 @@ ul {
     border-radius: 4px;
 
     background-color: var(--series-two);
+    color: var(--white);
 }
 
 .input placeholder {
