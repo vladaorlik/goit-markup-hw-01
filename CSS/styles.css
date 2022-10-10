@@ -795,6 +795,7 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
 
     min-width: 528px;
     min-height: 581px;
@@ -805,6 +806,7 @@ ul {
  }
 
  .button-modal {
+    position: absolute;
     cursor: pointer;   
     box-sizing: border-box;
     margin-top: 8px;
@@ -815,6 +817,8 @@ ul {
     padding: 0;
     border-radius: 50%;
     padding: 9px;
+    top: 0px;
+    right: 8px;
 
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -857,6 +861,7 @@ ul {
  .text-two {
     display: block;
     letter-spacing: 0.01em;
+    line-height: 24px;
 
     margin-left: 8px;
 
@@ -865,6 +870,7 @@ ul {
  .div-modal {
     display: flex;
     align-items: center; 
+    justify-content: center;
  }
  .div-modal input {
     width: 0px;
@@ -891,6 +897,9 @@ ul {
     margin-top: 30px;
 
     letter-spacing: 0.06em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
 
     color: var(--white);
  }
@@ -900,8 +909,6 @@ ul {
 
  .form {
     width: 448px;
-    margin-left: auto;
-    margin-right: auto;
  }
 
  .list-modal {
@@ -979,6 +986,7 @@ ul {
 
     width: 15px;
     height: 15px;
+    margin-right: 8px;
 
     border: 1px solid var(--black);
     border-radius: 2px;
@@ -995,7 +1003,7 @@ ul {
 /*footer-form*/
 
 .footer-form {
-    margin-left: 93px;
+    margin-left: auto;
     display: flex;
 
 }
