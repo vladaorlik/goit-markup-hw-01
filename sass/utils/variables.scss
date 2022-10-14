@@ -1,0 +1,43 @@
+$o-animation: cubic-bezier(0.4, 0, 0.2, 1);
+
+$black: #000000;
+$beige: #f5f4fa;
+$series: #AFB1B8;
+$blue: #2196F3;
+$white: #FFFFFF;
+$grey-black: #212121;
+$dark-series: #757575;
+$series-two: #2F303A;
+$blue-two: #188CE8;
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+

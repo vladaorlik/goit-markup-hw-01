@@ -1,0 +1,31 @@
+.page-header__logo {
+    color: $blue;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    margin-right: 93px;
+
+    &--color {
+        color: $black;
+    }
+}
+.page-footer__logo {
+    color: $blue;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    margin-bottom: 20px;
+    &--color {
+            color: $white;
+        }
+}

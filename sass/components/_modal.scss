@@ -1,0 +1,227 @@
+.basckdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms $o-animation;
+}
+.basckdrop {
+    &.is-hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+
+    min-width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    background-color: $white;
+}
+.button-modal {
+    position: absolute;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-left: 490px;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    padding: 9px;
+    top: 0px;
+    right: 8px;
+
+    background: $white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.svg-modal {
+    width: 18px;
+    height: 18px;
+
+    fill: $black;
+    &:hover {
+            fill: $blue;
+        }
+}
+.form {
+    width: 448px;
+}
+.text-modal {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+
+    color: $grey-black;
+}
+textarea {
+    resize: none;
+}
+.list-modal {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    & label {
+        margin-bottom: 4px;
+    }
+    & textarea {
+        &::placeholder {
+                color: rgba(117, 117, 117, 0.5);
+            }
+    }
+    & input {
+        box-sizing: border-box;
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    
+        min-height: 40px;
+        padding: 14px;
+        padding-left: 42px;
+    }
+    & textarea {
+        box-sizing: border-box;
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    
+        min-height: 120px;
+        padding: 12px 16px;
+    }
+    & input{
+        &:hover {
+                border-color: $blue;
+            }
+    }
+    & textarea {
+        &:hover {
+                border-color: $blue;
+            }
+    }
+}
+.name-modal {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.01em;
+
+    color: $dark-series;
+}
+.input-div {
+    position: relative;
+}
+.input-modal {
+    width: 448px;
+    &:hover~.svg-input {
+            fill: $blue;
+        }
+    &:focus~.svg-input {
+        fill: $blue;
+    }
+}
+.svg-input {
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    bottom: 14px;
+    left: 15px;
+}
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:checked+.icon-agreement {
+            background-image: url(../images/check.svg);
+            background-color: $blue;
+            border-color: $blue;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-size: contain;
+        }
+}
+.icon-agreement {
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 1px solid $black;
+    border-radius: 2px;
+}
+.div-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & input {
+            width: 0px;
+            height: 15px;
+        }
+}
+.text-two {
+    display: block;
+    letter-spacing: 0.01em;
+    line-height: 24px;
+
+    margin-left: 8px;
+
+    color: $dark-series;
+}
+.text-span {
+    color: $blue;
+}
+.but-modal {
+    cursor: pointer;
+
+    width: 200px;
+    height: 50px;
+
+    background: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0ch;
+    margin-left: 124px;
+    margin-right: 124px;
+    margin-top: 30px;
+
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+
+    color: $white;
+    &:hover {
+            background-color: $blue-two;
+        }
+}
+.modal-ul {
+    margin-bottom: 20px;
+}
+
+
+
+
+
