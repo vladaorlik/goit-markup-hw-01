@@ -84,5 +84,8 @@
 <symbol id="icon-check">
 <path d="m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z" fill="#fff" stroke="#fff" stroke-width=".2"/>
 </symbol>
+<symbol id="menu">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z" fill="#000"/>
+</symbol>
 </defs>
 </svg>

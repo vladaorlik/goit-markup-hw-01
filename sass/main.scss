@@ -1,12 +1,25 @@
 @import "./utils/variables.scss";
-@import "./components/page-header";
-@import "./components/logo";
-@import "./components/heading";
-@import "./components/features";
-@import "./components/photo-section";
-@import "./components/team";
-@import "./components/regular-customers";
-@import "./components/page-footer";
+@import "./components/container";
 @import "./components/modal";
-@import "./components/navigation-buttons";
-@import "./components/list-portfolio";
+@import "./components/page-header\(2\)";
+@import "./components/logo\(2\)";
+@import "./components/heading\(2\)";
+@import "./components/features\(2\)";
+@import "./components/photo-section\(2\)";
+@import "./components/team\(2\)";
+@import "./components/regular-customers\(2\)";
+@import "./components/page-footer\(2\)";
+
+
+// @import "./components/page-header";
+// @import "./components/logo";
+// @import "./components/heading";
+// @import "./components/features";
+// @import "./components/photo-section";
+// @import "./components/team";
+// @import "./components/regular-customers";
+// @import "./components/page-footer";
+// @import "./components/navigation-buttons";
+// @import "./components/list-portfolio";
+@import "./utils/breakpoints";
+
