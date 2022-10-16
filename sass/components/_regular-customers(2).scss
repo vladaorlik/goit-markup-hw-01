@@ -1,6 +1,8 @@
 .regular-customers {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: auto;
+    min-width: 480px;
 }
 .icon-text {
     font-weight: 700;
@@ -19,6 +21,7 @@
     flex-wrap: wrap;
 }
 .clients {
+
     &:nth-child(2n) {
         margin-left: 30px;
     }
