@@ -10,9 +10,9 @@
 }
 .basckdrop {
     &.is-hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 .modal {
     position: absolute;
@@ -21,8 +21,8 @@
     transform: translate(-50%, -50%);
     padding: 40px;
 
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -51,17 +51,18 @@
     height: 18px;
 
     fill: $black;
-    &:hover {
-            fill: $blue;
-        }
+
+    &:focus {
+        fill: $blue;
+    }
 }
 .form {
-    width: 448px;
+    width: 370px;
 }
 .text-modal {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -75,48 +76,52 @@ textarea {
 .list-modal {
     display: flex;
     flex-direction: column;
-    &:not(:last-child) {
-            margin-bottom: 10px;
-        }
+
     &:not(:last-child) {
         margin-bottom: 10px;
     }
+
     & label {
         margin-bottom: 4px;
     }
+
     & textarea {
         &::placeholder {
-                color: rgba(117, 117, 117, 0.5);
-            }
+            color: rgba(117, 117, 117, 0.5);
+        }
     }
+
     & input {
         box-sizing: border-box;
-    
+
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-    
+
         min-height: 40px;
         padding: 14px;
         padding-left: 42px;
     }
+
     & textarea {
         box-sizing: border-box;
-    
+
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-    
+
         min-height: 120px;
         padding: 12px 16px;
     }
-    & input{
-        &:hover {
-                border-color: $blue;
-            }
+
+    & input {
+        &:focus {
+            border-color: $blue;
+        }
     }
+
     & textarea {
-        &:hover {
-                border-color: $blue;
-            }
+        &:focus {
+            border-color: $blue;
+        }
     }
 }
 .name-modal {
@@ -132,11 +137,9 @@ textarea {
     position: relative;
 }
 .input-modal {
-    width: 448px;
-    &:hover~.svg-input {
-            fill: $blue;
-        }
-    &:focus~.svg-input {
+    width: 370px;
+
+    &:focus ~ .svg-input {
         fill: $blue;
     }
 }
@@ -153,14 +156,25 @@ textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    &:checked + .icon-agreement {
-            background-image: url(../images/check.svg);
-            background-color: $blue;
-            border-color: $blue;
-            background-repeat: no-repeat;
-            background-origin: border-box;
-            background-size: contain;
-        }
+
+    &:checked+.icon-agreement {
+        background-image: url(../images/check.svg);
+        background-color: $blue;
+        border-color: $blue;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: contain;
+    }
+}
+.div-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & input {
+        width: 0px;
+        height: 15px;
+    }
 }
 .icon-agreement {
     display: inline-block;
@@ -172,24 +186,18 @@ textarea {
     border: 1px solid $black;
     border-radius: 2px;
 }
-.div-modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    & input {
-            width: 0px;
-            height: 15px;
-        }
-}
 .text-two {
     display: block;
-    letter-spacing: 0.01em;
-    line-height: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
 
     margin-left: 8px;
 
     color: $dark-series;
 }
+
 .text-span {
     color: $blue;
 }
@@ -203,8 +211,8 @@ textarea {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0ch;
-    margin-left: 124px;
-    margin-right: 124px;
+    margin-left: 85px;
+    margin-right: 85px;
     margin-top: 30px;
 
     letter-spacing: 0.06em;
@@ -213,15 +221,12 @@ textarea {
     line-height: 1.88;
 
     color: $white;
+
     &:hover {
-            background-color: $blue-two;
-        }
+        background-color: $blue-two;
+    }
 }
+
 .modal-ul {
     margin-bottom: 20px;
 }
-
-
-
-
-
