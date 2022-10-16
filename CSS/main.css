@@ -285,9 +285,27 @@ textarea {
 }
 
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 60px;
   padding: 10px;
   border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -299,8 +317,10 @@ textarea {
 .page-header__button {
   border: none;
   padding: 0;
-  margin-left: 270px;
   background-color: #FFFFFF;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 270px;
 }
 
 .page-header__svg {
@@ -318,11 +338,10 @@ textarea {
   color: #2196F3;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin-bottom: 30px;
 }
 .page-header__logo--color {
   color: #000000;
