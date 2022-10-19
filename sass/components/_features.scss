@@ -1,7 +1,11 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .transparent-header {
     visibility: hidden;
@@ -9,45 +13,91 @@
     position: absolute;
 }
 .list-benefits {
-    display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        flex-wrap: wrap;
+    }
 }
 .benefits {
     &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+        
+        &:nth-last-child(-n +2) {
+            margin-top: 30px;
+        }
+    }
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    &:not(:last-child) {
             margin-right: 30px;
         }
+    &:nth-child(2n) {
+        margin-left: 0px;
+    }
+    
+    &:nth-last-child(-n +2) {
+        margin-top: 0px;
+    }
+}
 }
 .icon-benefits {
     background-color: $beige;
     border-radius: 4px;
 
-    width: 270px;
+    width: 450px;
     height: 120px;
     margin-bottom: 30px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+    }
+
+@media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
 }
+}
+
 .icon {
     width: 70px;
     height: 70px;
 }
 .title {
+    @media screen and (max-width: 768px) {
+        text-align: center;}
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     margin-bottom: 10px;
     margin-top: 0;
 }
+
 .text {
     color: $dark-series;
 
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.71;
 
     margin-top: 0;
 }
-
-
-

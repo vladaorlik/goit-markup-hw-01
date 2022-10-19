@@ -12,18 +12,20 @@
   <body> 
     <header class="page-header">      
       <div class="container page-header__nav">
-      <nav class="page-header__nav">        
+        <nav class="page-header__nav">        
         <a href="/" class="page-header__logo">Web<span class="page-header__logo--color">Studio</span></a>
         <ul class="list-nav">         
           <li class="list-nav__navigation"><a class="list-nav__link list-nav__link--underlining" href="./index.html"><span class="list-nav__link--color">Cтудія</span></a></li>
           <li class="list-nav__navigation"><a class="list-nav__link" href="./portfolio.html">Портфоліо</a></li>
           <li class="list-nav__navigation"><a class="list-nav__link" href="/">Контакти</a></li>
         </ul>
-        <button class="page-header__button">
-          <svg class="page-header__svg">
-            <use href="./images/icons.svg#menu"></use>
-          </svg>
-        </button>
+          <button type="button" class="page-header__button js-open-menu" 
+          aria-expanded="false" 
+          aria-controls="mobile-menu">
+            <svg class="page-header__svg" aria-label="перемикач мобільного меню">
+              <use class="page-header__menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
       </nav>
       <ul class="list-contact">           
         <li class="list-contact__li">
@@ -41,7 +43,7 @@
           +38 096 111 11 11</a>
         </li>
       </ul>
-      </div>
+    </div>
     </header>
     <main>
       <section class="heading">
@@ -365,7 +367,8 @@
     </main>
      <footer class="page-footer">      
      <div class="container div-footer">
-      <div>
+      <div class="page-footer__box">
+      <div class="page-footer__container">
       <a href="/" class="page-footer__logo">Web<span class="page-footer__logo--color">Studio</span></a>
       <address>
         <ul>
@@ -408,8 +411,10 @@
           </li>
         </ul>
       </div>
+      </div>
       <div class="footer-form">             
         <form>
+          <div class="footer-form__div">
           <p class="footer-form__lebel">Підпишіться на розсилку</p>
           <div class="footer-form__box">
             <input type="email" name="mail" placeholder="E-mail" class="footer-form__input">
@@ -419,6 +424,7 @@
                 <use href="./images/icons.svg#telegram"></use>
               </svg>
             </button>
+            </div>
           </div>
         </form>
       </div>
@@ -477,6 +483,35 @@
         </form>
        </div>
      </div>
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="page-header__button js-close-menu">
+        <svg class="menu-container__svg">
+         <use class="page-header__button--color" href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+      <ul class="list-navigation">
+        <li class="list-nav__navigation"><a class="list-nav__link" href="./index.html"><span class="list-nav__link--color">Cтудія</span></a></li>
+        <li class="list-nav__navigation"><a class="list-nav__link" href="./portfolio.html">Портфоліо</a></li>
+        <li class="list-nav__navigation"><a class="list-nav__link" href="/">Контакти</a></li>
+      </ul>
+      <ul class="list-con">
+        <li class="list-con__li">
+          <a class="list-con__navigation list-con__navigation--color" href="tel:+380961111111">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="list-con__li">
+          <a class="list-con__navigation" href="mailto:info@devstudio.com">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="list-social">
+        <li class="list-social__li"><a href="" class="list-social__a">Instagram</a></li>
+        <li class="list-social__li"><a href="" class="list-social__a">Twitter</a></li>
+        <li class="list-social__li"><a href="" class="list-social__a">Facebook</a></li>
+        <li class="list-social__li"><a href="" class="list-social__a">LinkedIn</a></li>
+      </ul>
+     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html> 
