@@ -19,7 +19,7 @@
           <li class="list-nav__navigation"><a class="list-nav__link" href="./portfolio.html">Портфоліо</a></li>
           <li class="list-nav__navigation"><a class="list-nav__link" href="/">Контакти</a></li>
         </ul>
-          <button type="button" class="page-header__button js-open-menu" 
+          <button class="button-menu js-open-menu" 
           aria-expanded="false" 
           aria-controls="mobile-menu">
             <svg class="page-header__svg" aria-label="перемикач мобільного меню">
@@ -111,7 +111,9 @@
       <li class="photo-li"> 
        <div class="photo-div">
         <img class="photo" 
-        src="images/photo1.jpg" 
+        srcset="./images/img-photo-1-1x.jpg 1x,
+                ./images/img-photo-1-2x.jpg 2x"
+        src="images/img-photo-1-1x.jpg" 
         alt="programer working his desk office" 
         width="370" 
         height="294" 
@@ -126,7 +128,9 @@
       <li class="photo-li">
       <div class="photo-div">
         <img class="photo" 
-        src="images/photo2.jpg" 
+        srcset="./images/img-photo-2-1x.jpg 1x,
+                ./images/img-photo-2-2x.jpg 2x"
+        src="images/img-photo-2-1x.jpg" 
         alt="web ui designers are developing application smartphones" 
         width="370"
         height="294" 
@@ -141,7 +145,9 @@
       <li class="photo-li">
       <div class="photo-div">
         <img class="photo" 
-        src="images/photo3.jpg" 
+        srcset="./images/img-photo-3-1x.jpg 1x,
+                ./images/img-photo-3-2x.jpg 2x"
+        src="images/img-photo-3-1x.jpg"  
         alt="creative artist web design with working colour selection graphic tablet"
         width="370" 
         height="294" 
@@ -162,7 +168,11 @@
       <ul class="list-two"> 
         <li class="team-li">
         <img class="photo" 
-        src="images/img(1).jpg" alt="Ігор Дем'яненко" width="270" />
+        srcset="./images/img-1-1x.jpg 1x,
+                ./images/img-1-2x.jpg 2x"
+        src="images/img-1-1x.jpg" 
+        alt="Ігор Дем'яненко" 
+        width="270" />
       <div class="text-photo">
           <h3 class="text-team">Ігор Дем'яненко</h3>
           <p class="text-paragraph">Product Designer</p>
@@ -200,7 +210,11 @@
         </li>
         <li class="team-li">
         <img class="photo" 
-        src="images/img(2).jpg" alt="Ольга Рєпіна" width="270" />
+        srcset="./images/img-2-1x.jpg 1x,
+                ./images/img-2-2x.jpg 2x"
+        src="images/img-2-1x.jpg" 
+        alt="Ольга Рєпіна" 
+        width="270" />
           <div class="text-photo">
           <h3 class="text-team">Ольга Рєпіна</h3>
           <p class="text-paragraph">Frontend Developer</p>
@@ -238,7 +252,11 @@
         </li>
         <li class="team-li">
         <img class="photo" 
-        src="images/img(3).jpg" alt="Микола Тарасов" width="270" />
+        srcset="./images/img-3-1x.jpg 1x,
+                ./images/img-3-2x.jpg 2x"
+        src="images/img-3-1x.jpg" 
+        alt="Микола Тарасов" 
+        width="270" />
           <div class="text-photo">
           <h3 class="text-team">Микола Тарасов</h3>
           <p class="text-paragraph">Marketing</p>
@@ -276,7 +294,11 @@
         </li>
         <li class="team-li">
         <img class="photo" 
-        src="images/img(4).jpg" alt="Михайло Єрмаков" width="270" />
+        srcset="./images/img-4-1x.jpg 1x,
+                ./images/img-4-2x.jpg 2x"
+        src="images/img-4-1x.jpg" 
+        alt="Михайло Єрмаков" 
+        width="270" />
           <div class="text-photo">
           <h3 class="text-team">Михайло Єрмаков</h3>
           <p class="text-paragraph">UI Designer</p>
@@ -484,9 +506,9 @@
        </div>
      </div>
      <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="page-header__button js-close-menu">
+      <button class="button-menu js-close-menu">
         <svg class="menu-container__svg">
-         <use class="page-header__button--color" href="./images/icons.svg#close-menu"></use>
+         <use class="button-menu--color" href="./images/icons.svg#close-menu"></use>
         </svg>
       </button>
       <ul class="list-navigation">
@@ -512,6 +534,10 @@
       </ul>
      </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html> 

@@ -1,7 +1,6 @@
 .page-header {
     position: relative;
-    // display: flex;
-    // align-items: center;
+    display: flex;
     height: 60px;
     min-width: 480px;
     padding: 10px;
@@ -148,7 +147,7 @@
         display: none;
     }
 }
-.page-header__button {
+.button-menu {
     min-height: 40px;
     min-width: 40px;
     display: flex;
@@ -171,7 +170,7 @@
     
 }
 
-.page-header .page-header__button {
+.page-header .button-menu {
     position: absolute;
     top: 10px;
     right: 16px;
@@ -185,7 +184,7 @@
 
 
 @media screen and (min-width: 767px) {
-    .page-header__button, 
+    .button-menu, 
     .page-header__svg {
         display: none;
     }

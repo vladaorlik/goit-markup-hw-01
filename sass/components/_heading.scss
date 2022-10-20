@@ -1,10 +1,9 @@
 .heading {
     background-color: $series-two;
     background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%),
-        url(../images/Img\ \(5\).jpg);
+        url(../images/Header-img-380-1x.jpg);
 
     background-size: cover;
-
     text-align: center;
     justify-content: center;
 
@@ -14,13 +13,48 @@
     min-width: 480px;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        max-width: 1600px;
+}
+@media screen and (min-device-pixel-ratio: 2), 
+     screen and (min-resolution: 2dppx) {
+    .heading {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/Header-img-380-2x.jpg);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .heading {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%),
+            url(../images/Header-img-768-1x.jpg);
+    }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 2dppx) {
+            .heading {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/Header-img-768-2x.jpg);
+            }
+        }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .heading {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%),
+            url(../images/Header-img-1200-1x.jpg);
+
+            padding-top: 200px;
+            padding-bottom: 200px;
+            min-width: 1200px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 2dppx) {
+        .heading {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/Header-img-1200-2x.jpg);
+        }
+    }
+
+}
+
 .title-text {
     color: $white;
 
