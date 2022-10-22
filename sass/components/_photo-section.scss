@@ -20,7 +20,6 @@
 
 .list-photo {
     display: flex;
-    justify-content: center;
 }
 
 .photo-li {
@@ -33,8 +32,10 @@
     position: relative;
 }
 
-.photo {
+.photo-img {
     display: block;
+    width: 370px;
+    height: 294px;
 }
 
 .photo-box {

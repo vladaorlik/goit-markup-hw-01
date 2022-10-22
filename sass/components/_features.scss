@@ -1,4 +1,7 @@
 .features {
+@media screen and (max-width: 767px) {
+    width: 450px;
+}
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -101,3 +104,4 @@
 
     margin-top: 0;
 }
+

@@ -110,13 +110,9 @@
       <ul class="list-photo"> 
       <li class="photo-li"> 
        <div class="photo-div">
-        <img class="photo" 
-        srcset="./images/img-photo-1-1x.jpg 1x,
-                ./images/img-photo-1-2x.jpg 2x"
+        <img class="photo-img" 
         src="images/img-photo-1-1x.jpg" 
-        alt="programer working his desk office" 
-        width="370" 
-        height="294" 
+        alt="programer working his desk office"  
         />
         <div class="photo-box">
           <p class="photo-p">
@@ -127,13 +123,9 @@
       </li>
       <li class="photo-li">
       <div class="photo-div">
-        <img class="photo" 
-        srcset="./images/img-photo-2-1x.jpg 1x,
-                ./images/img-photo-2-2x.jpg 2x"
+        <img class="photo-img" 
         src="images/img-photo-2-1x.jpg" 
-        alt="web ui designers are developing application smartphones" 
-        width="370"
-        height="294" 
+        alt="web ui designers are developing application smartphones"  
         />
         <div class="photo-box">
           <p class="photo-p">
@@ -144,13 +136,9 @@
       </li>
       <li class="photo-li">
       <div class="photo-div">
-        <img class="photo" 
-        srcset="./images/img-photo-3-1x.jpg 1x,
-                ./images/img-photo-3-2x.jpg 2x"
+        <img class="photo-img" 
         src="images/img-photo-3-1x.jpg"  
         alt="creative artist web design with working colour selection graphic tablet"
-        width="370" 
-        height="294" 
         />
         <div class="photo-box">
           <p class="photo-p">
@@ -167,12 +155,14 @@
       <h2 class="title-two">Наша команда</h2>
       <ul class="list-two"> 
         <li class="team-li">
-        <img class="photo" 
-        srcset="./images/img-1-1x.jpg 1x,
-                ./images/img-1-2x.jpg 2x"
-        src="images/img-1-1x.jpg" 
-        alt="Ігор Дем'яненко" 
-        width="270" />
+        <picture>
+          <source srcset="./images/img-1-1x.jpg 1x,
+          ./images/img-1-2x.jpg 2x">
+          <img class="photo"
+          src="images/img-1-1x.jpg"
+          alt="Ігор Дем'яненко"
+          width="270">
+        </picture>
       <div class="text-photo">
           <h3 class="text-team">Ігор Дем'яненко</h3>
           <p class="text-paragraph">Product Designer</p>
@@ -209,12 +199,14 @@
       </div>
         </li>
         <li class="team-li">
-        <img class="photo" 
-        srcset="./images/img-2-1x.jpg 1x,
-                ./images/img-2-2x.jpg 2x"
-        src="images/img-2-1x.jpg" 
-        alt="Ольга Рєпіна" 
-        width="270" />
+          <picture>
+            <source srcset="./images/img-2-1x.jpg 1x,
+                ./images/img-2-2x.jpg 2x">
+            <img class="photo"
+            src="images/img-2-1x.jpg" 
+             alt="Ольга Рєпіна" 
+            width="270" >
+          </picture>
           <div class="text-photo">
           <h3 class="text-team">Ольга Рєпіна</h3>
           <p class="text-paragraph">Frontend Developer</p>
@@ -251,18 +243,20 @@
       </div>
         </li>
         <li class="team-li">
+          <picture>
+          <source srcset="./images/img-3-1x.jpg 1x,
+                ./images/img-3-2x.jpg 2x">
         <img class="photo" 
-        srcset="./images/img-3-1x.jpg 1x,
-                ./images/img-3-2x.jpg 2x"
         src="images/img-3-1x.jpg" 
         alt="Микола Тарасов" 
         width="270" />
+        </picture>
           <div class="text-photo">
           <h3 class="text-team">Микола Тарасов</h3>
           <p class="text-paragraph">Marketing</p>
           <ul class="icon-list">
           <li class="icon-li">
-            <a href="/"class="icon-a" >
+            <a href="/" class="icon-a" >
             <svg class="icon-social">
               <use href="./images/icons.svg#instagram"></use>
             </svg>
@@ -293,12 +287,14 @@
         </div>
         </li>
         <li class="team-li">
+          <picture>
+          <source srcset="./images/img-4-1x.jpg 1x,
+                ./images/img-4-2x.jpg 2x">
         <img class="photo" 
-        srcset="./images/img-4-1x.jpg 1x,
-                ./images/img-4-2x.jpg 2x"
         src="images/img-4-1x.jpg" 
         alt="Михайло Єрмаков" 
         width="270" />
+        </picture>
           <div class="text-photo">
           <h3 class="text-team">Михайло Єрмаков</h3>
           <p class="text-paragraph">UI Designer</p>
@@ -311,7 +307,7 @@
             </a>
           </li>
           <li class="icon-li">
-            <a href="/"class="icon-a" > 
+            <a href="/" class="icon-a" > 
             <svg class="icon-social">
               <use href="./images/icons.svg#twitter"></use>
             </svg>
