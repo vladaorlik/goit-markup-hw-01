@@ -331,8 +331,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .heading {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(0%, rgba(47, 48, 58, 0.4))), url(../images/Header-img-1200-1x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/Header-img-1200-1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(0%, rgba(47, 48, 58, 0.4))), url(../images/img-header.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/img-header.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     min-width: 1200px;
@@ -340,8 +340,8 @@ img {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .heading {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(0%, rgba(47, 48, 58, 0.4))), url(../images/Header-img-1200-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/Header-img-1200-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(0%, rgba(47, 48, 58, 0.4))), url(../images/img-header.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/img-header.jpg);
   }
 }
 .title-text {
