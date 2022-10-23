@@ -2,7 +2,7 @@
     background-color: $beige;
     margin: auto;
     min-width: 480px;
-
+    min-width: 320px;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -62,6 +62,13 @@
         &:nth-child(2n) {
                 margin-left: 30px;
             }
+
+        &:nth-last-of-type(1){
+            margin-bottom: 0;
+        }
+        &:nth-last-of-type(2) {
+            margin-bottom: 0;
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -69,6 +76,10 @@
         height: 428px;
         &:not(:last-child) {
             margin-right: 30px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0px;
         }
     }
 }
@@ -89,9 +100,9 @@
 }
 .text-photo {
     padding-top: 30px;
-    padding-right: 122px;
+    // padding-right: 122px;
     padding-bottom: 30px;
-    padding-left: 122px;
+    // padding-left: 122px;
     text-align: center;
 
     background-color: $white;
@@ -129,6 +140,7 @@
 }
 .icon-list {
     display: flex;
+    justify-content: center;
 }
 .icon-li {
     height: 44px;

@@ -56,7 +56,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   height: 60px;
-  min-width: 480px;
+  min-width: 320px;
   padding: 10px;
   border-bottom: 1px solid #ECECEC;
 }
@@ -306,9 +306,13 @@ img {
           justify-content: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 320px) {
+  .heading {
+    min-width: 320px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
@@ -399,11 +403,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 767px) {
-  .features {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .features {
     padding-top: 94px;
@@ -445,6 +444,14 @@ img {
     margin-top: 30px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+  .benefits:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .benefits {
     margin-bottom: 0;
@@ -463,7 +470,7 @@ img {
 .icon-benefits {
   background-color: #f5f4fa;
   border-radius: 4px;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   display: -webkit-box;
@@ -587,6 +594,7 @@ img {
   background-color: #f5f4fa;
   margin: auto;
   min-width: 480px;
+  min-width: 320px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -652,6 +660,12 @@ img {
   .team-li:nth-child(2n) {
     margin-left: 30px;
   }
+  .team-li:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+  .team-li:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team-li {
@@ -660,6 +674,9 @@ img {
   }
   .team-li:not(:last-child) {
     margin-right: 30px;
+  }
+  .team-li:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 
@@ -682,9 +699,7 @@ img {
 
 .text-photo {
   padding-top: 30px;
-  padding-right: 122px;
   padding-bottom: 30px;
-  padding-left: 122px;
   text-align: center;
   background-color: #FFFFFF;
 }
@@ -725,6 +740,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .icon-li {
@@ -771,7 +789,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: auto;
-  min-width: 480px;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .regular-customers {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 768px) {
   .regular-customers {
@@ -808,6 +830,9 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -818,9 +843,11 @@ img {
   }
 }
 
-.clients {
-  width: 210px;
-  height: 92px;
+@media screen and (min-width: 480px) {
+  .clients {
+    width: 210px;
+    height: 92px;
+  }
 }
 @media screen and (max-width: 767px) {
   .clients:nth-child(2n) {
@@ -833,7 +860,17 @@ img {
 @media screen and (min-width: 768px) {
   .clients {
     margin-left: 30px;
-    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+  .clients:nth-last-of-type(1) {
+    margin-top: 30px;
+  }
+  .clients:nth-last-of-type(2) {
+    margin-top: 30px;
+  }
+  .clients:nth-last-of-type(3) {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -885,7 +922,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: auto;
-  min-width: 480px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1083,7 +1119,7 @@ img {
   }
 }
 .footer-form__input {
-  width: 450px;
+  min-width: 300px;
   height: 50px;
   padding: 15px;
   margin-bottom: 20px;
@@ -1093,6 +1129,11 @@ img {
   border-radius: 4px;
   background-color: #2F303A;
   color: #FFFFFF;
+}
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
@@ -1171,14 +1212,13 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
-  min-width: 450px;
   min-height: 609px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 330px) {
   .modal {
     width: 100%;
     height: 100%;
@@ -1433,8 +1473,8 @@ textarea {
   position: fixed;
   top: 0px;
   left: 0;
-  width: 100vw;
-  min-height: 796px;
+  width: 100%;
+  height: 100%;
   padding-left: 40px;
   opacity: 0;
   z-index: 999;

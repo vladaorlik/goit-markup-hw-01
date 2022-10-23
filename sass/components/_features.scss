@@ -1,9 +1,8 @@
 .features {
-@media screen and (max-width: 767px) {
-    width: 450px;
-}
     padding-top: 60px;
     padding-bottom: 60px;
+    // display: flex;
+    // justify-content: center;
 
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -40,6 +39,16 @@
         }
     }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+
+    &:nth-last-of-type(2) {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     &:not(:last-child) {
@@ -58,7 +67,7 @@
     background-color: $beige;
     border-radius: 4px;
 
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
 
@@ -83,7 +92,8 @@
 }
 .title {
     @media screen and (max-width: 768px) {
-        text-align: center;}
+        text-align: center;
+    }
 
     font-weight: 700;
     font-size: 14px;
